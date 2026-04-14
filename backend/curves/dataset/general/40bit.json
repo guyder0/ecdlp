@@ -1,0 +1,24 @@
+[
+{
+    "field": {
+        "p": "0xd1e920b8e1"
+    },
+    "a": "0x72379cc68a",
+    "b": "0xb0a7fba90f",
+    "order": "0xd1e92f5f9b",
+    "subgroups": [
+        {
+            "x": "0x77df995631",
+            "y": "0x99ab2d9243",
+            "order": "0xd1e92f5f9b",
+            "cofactor": "0x1",
+            "points": [
+                {
+                    "x": "0x77df995631",
+                    "y": "0x99ab2d9243",
+                    "order": "0xd1e92f5f9b"
+                }
+            ]
+        }
+    ]
+}]

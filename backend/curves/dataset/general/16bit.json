@@ -1,0 +1,116 @@
+[
+{
+    "field": {
+        "p": "0x8551"
+    },
+    "a": "0x3586",
+    "b": "0x68f5",
+    "order": "0x83ff",
+    "subgroups": [
+        {
+            "x": "0x7fbb",
+            "y": "0x0220",
+            "order": "0x83ff",
+            "cofactor": "0x1",
+            "points": [
+                {
+                    "x": "0x7fbb",
+                    "y": "0x0220",
+                    "order": "0x83ff"
+                }
+            ]
+        }
+    ]
+},
+{
+    "field": {
+        "p": "0xddf5"
+    },
+    "a": "0x7c77",
+    "b": "0xb51d",
+    "order": "0xdf87",
+    "subgroups": [
+        {
+            "x": "0x0e9c",
+            "y": "0x3ccc",
+            "order": "0xdf87",
+            "cofactor": "0x1",
+            "points": [
+                {
+                    "x": "0x0e9c",
+                    "y": "0x3ccc",
+                    "order": "0xdf87"
+                }
+            ]
+        }
+    ]
+},
+{
+    "field": {
+        "p": "0xa5a7"
+    },
+    "a": "0x6f1c",
+    "b": "0x6b01",
+    "order": "0xa4cb",
+    "subgroups": [
+        {
+            "x": "0x1eb2",
+            "y": "0x3b6e",
+            "order": "0xa4cb",
+            "cofactor": "0x1",
+            "points": [
+                {
+                    "x": "0x1eb2",
+                    "y": "0x3b6e",
+                    "order": "0xa4cb"
+                }
+            ]
+        }
+    ]
+},
+{
+    "field": {
+        "p": "0xaaef"
+    },
+    "a": "0x64bf",
+    "b": "0x79f4",
+    "order": "0xaaab",
+    "subgroups": [
+        {
+            "x": "0x3b36",
+            "y": "0x32e9",
+            "order": "0xaaab",
+            "cofactor": "0x1",
+            "points": [
+                {
+                    "x": "0x3b36",
+                    "y": "0x32e9",
+                    "order": "0xaaab"
+                }
+            ]
+        }
+    ]
+},
+{
+    "field": {
+        "p": "0xb165"
+    },
+    "a": "0x9cbf",
+    "b": "0x906e",
+    "order": "0xb087",
+    "subgroups": [
+        {
+            "x": "0x2b18",
+            "y": "0xa231",
+            "order": "0xb087",
+            "cofactor": "0x1",
+            "points": [
+                {
+                    "x": "0x2b18",
+                    "y": "0xa231",
+                    "order": "0xb087"
+                }
+            ]
+        }
+    ]
+}]

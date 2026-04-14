@@ -1,0 +1,70 @@
+[
+{
+    "field": {
+        "p": "0xc3cb7e35"
+    },
+    "a": "0xab7d11d5",
+    "b": "0x91084159",
+    "order": "0xc3cb2ec1",
+    "subgroups": [
+        {
+            "x": "0x0830872b",
+            "y": "0x9a749006",
+            "order": "0xc3cb2ec1",
+            "cofactor": "0x1",
+            "points": [
+                {
+                    "x": "0x0830872b",
+                    "y": "0x9a749006",
+                    "order": "0xc3cb2ec1"
+                }
+            ]
+        }
+    ]
+},
+{
+    "field": {
+        "p": "0xd53f9eb7"
+    },
+    "a": "0x55299416",
+    "b": "0xc0318168",
+    "order": "0xd53fe819",
+    "subgroups": [
+        {
+            "x": "0xc6f85f86",
+            "y": "0xce798285",
+            "order": "0xd53fe819",
+            "cofactor": "0x1",
+            "points": [
+                {
+                    "x": "0xc6f85f86",
+                    "y": "0xce798285",
+                    "order": "0xd53fe819"
+                }
+            ]
+        }
+    ]
+},
+{
+    "field": {
+        "p": "0xe5eac567"
+    },
+    "a": "0x84f32a6d",
+    "b": "0xaf7930a9",
+    "order": "0xe5e9e84b",
+    "subgroups": [
+        {
+            "x": "0x98e5b806",
+            "y": "0x941f442a",
+            "order": "0xe5e9e84b",
+            "cofactor": "0x1",
+            "points": [
+                {
+                    "x": "0x98e5b806",
+                    "y": "0x941f442a",
+                    "order": "0xe5e9e84b"
+                }
+            ]
+        }
+    ]
+}]
