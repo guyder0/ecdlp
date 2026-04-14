@@ -1,0 +1,11 @@
+# Core library
+fastecdsa
+sympy
+
+# API
+fastapi
+uvicorn[standard]
+pydantic
+
+# Testing
+pytest
