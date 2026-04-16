@@ -23,12 +23,12 @@ class CurveDetail(BaseModel):
     id: str
     name: str
     description: str
-    p: int
-    a: int
-    b: int
-    gx: int
-    gy: int
-    q: int
+    p: str
+    a: str
+    b: str
+    gx: str
+    gy: str
+    q: str
 
 
 # --- Solve schemas ---

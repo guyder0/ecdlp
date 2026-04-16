@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { CurveGrid } from './components/CurveGrid';
 import { socket } from './services/socket';
 import { Badge } from '@/components/ui/badge';

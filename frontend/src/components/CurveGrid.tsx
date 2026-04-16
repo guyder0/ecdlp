@@ -40,7 +40,7 @@ export const CurveGrid: React.FC = () => {
           summary={curve}
           detail={details[curve.id]} // Может быть undefined, если еще не загрузили
           task={tasks[curve.id] || { taskId: null, status: 'idle' }}
-          onFetchDetail={() => fetchCurveDetail(curve.id)}
+          onClick={() => fetchCurveDetail(curve.id)}
           onSolve={(x) => solve(curve.id, x)}
           onCancel={() => cancel(curve.id)}
         />

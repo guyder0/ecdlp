@@ -14,6 +14,7 @@ from __future__ import annotations
 from fastecdsa.curve import Curve
 from fastecdsa.point import Point
 import functools
+import traceback
 
 from api.curves import CURVE_REGISTRY
 from api.services.socket_manager import SocketManager
@@ -45,7 +46,7 @@ def register_handlers(socket_mgr: SocketManager, task_mgr: TaskManager) -> None:
                         {
                             "task_id": data.get("task_id") if isinstance(data, dict) else None,
                             "status": "failed",
-                            "error": f"Internal server error: {str(e)}"
+                            "error": f"Internal server error: {traceback.format_exc()}"
                         },
                         to=sid
                     )

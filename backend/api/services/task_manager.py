@@ -92,7 +92,7 @@ class TaskManager:
                     socket_manager.emit_task_complete(
                         task_id,
                         status=task.status.value,
-                        result=hex(task.result),
+                        result=hex(task.result) if task.result is not None else None,
                         error=task.error,
                     )
                 )

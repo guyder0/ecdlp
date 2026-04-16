@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { type TaskState } from '@/hooks/useSolver';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -10,7 +10,7 @@ import { toHex, toBigInt } from '@/lib/utils';
 
 interface SolverPanelProps {
   task: TaskState;
-  curveOrder?: string; // Передаем q из detail, если он загружен
+  curveOrder: string;
   onSolve: (x: string) => void;
   onCancel: () => void;
 }
@@ -22,13 +22,25 @@ export const SolverPanel: React.FC<SolverPanelProps> = ({
   onCancel,
 }) => {
   const [xValue, setXValue] = useState<string>("0x0");
+  const [sValue, setSValue] = useState<number>(0)
   const [copied, setCopied] = useState(false);
+
+  const handleInputChange = (e:any) => {
+    let val = e.target.value.toLowerCase();
+    if (val.length < 2) { setXValue("0x"); }
+    else if (!val.startsWith("0x")) { val = "0x" + val; }
+    else {
+      const prefix = "0x";
+      const hexPart = val.slice(2).replace(/[^0-9a-f]/g, '');
+      setXValue(prefix + hexPart);
+    }
+  }
 
   // Обработка слайдера: вычисляем % от q
   const handleSliderChange = (percent: number[]) => {
-    if (!curveOrder) return;
+    setSValue(percent[0])
     try {
-      const q = BigInt(curveOrder);
+      const q = toBigInt(curveOrder);
       const newValue = (q * BigInt(percent[0])) / 100n;
       setXValue(toHex(newValue));
     } catch (e) {
@@ -53,8 +65,8 @@ export const SolverPanel: React.FC<SolverPanelProps> = ({
           <Input
             id="x-value"
             value={xValue}
-            onChange={(e) => setXValue(e.target.value.replace(/\D/g, ''))}
-            disabled={isRunning}
+            onChange={handleInputChange}
+            disabled={isRunning || !curveOrder}
             placeholder="Введите число..."
             className="font-mono"
           />
@@ -70,16 +82,12 @@ export const SolverPanel: React.FC<SolverPanelProps> = ({
         </div>
         <Slider
           disabled={isRunning || !curveOrder}
-          defaultValue={[0]}
+          value={[sValue]}
+          min={0}
           max={100}
           step={1}
           onValueChange={handleSliderChange}
         />
-        {!curveOrder && (
-          <p className="text-[10px] text-amber-600">
-            Загрузите "Параметры", чтобы активировать слайдер
-          </p>
-        )}
       </div>
 
       {/* Кнопки управления */}

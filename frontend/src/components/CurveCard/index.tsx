@@ -18,9 +18,9 @@ import { DetailsPanel } from './DetailsPanel';
 
 interface CurveCardProps {
   summary: CurveSummary;
-  detail?: CurveDetail;
+  detail: CurveDetail;
   task: TaskState;
-  onFetchDetail: () => void;
+  onClick: () => void;
   onSolve: (x: string) => void;
   onCancel: () => void;
 }
@@ -29,7 +29,7 @@ export const CurveCard: React.FC<CurveCardProps> = ({
   summary,
   detail,
   task,
-  onFetchDetail,
+  onClick,
   onSolve,
   onCancel,
 }) => {
@@ -53,7 +53,7 @@ export const CurveCard: React.FC<CurveCardProps> = ({
 
   return (
     <Card className={`transition-all duration-300 ${isExpanded ? 'ring-2 ring-primary' : ''}`}>
-      <CardHeader className="cursor-pointer" onClick={() => setIsExpanded(!isExpanded)}>
+      <CardHeader className="cursor-pointer" onClick={() => {onClick(); setIsExpanded(!isExpanded);}}>
         <div className="flex justify-between items-start">
           <div>
             <CardTitle className="text-xl font-bold">{summary.name}</CardTitle>
@@ -73,9 +73,7 @@ export const CurveCard: React.FC<CurveCardProps> = ({
 
       {isExpanded && (
         <CardContent className="pt-0">
-          <Tabs defaultValue="solver" className="w-full" onValueChange={(value) => {
-            if (value === 'details') onFetchDetail();
-          }}>
+          <Tabs defaultValue="details" className="w-full">
             <TabsList className="grid w-full grid-cols-2 mb-4">
               <TabsTrigger value="solver">Решатель</TabsTrigger>
               <TabsTrigger value="details">Параметры</TabsTrigger>

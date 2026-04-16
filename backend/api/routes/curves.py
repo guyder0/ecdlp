@@ -18,7 +18,9 @@ async def list_curves():
 @router.get("/curves/{curve_id}", response_model=CurveDetail)
 async def get_curve(curve_id: str):
     """Returns full parameters of a curve by ID."""
-    curve = CURVE_REGISTRY.get(curve_id)
+    curve = CURVE_REGISTRY.get(curve_id).copy()
+    for param in ['p', 'a', 'b', 'gx', 'gy', 'q']:
+        curve[param] = hex(curve[param])
     if curve is None:
         raise HTTPException(status_code=404, detail=f"Curve '{curve_id}' not found")
     return CurveDetail(id=curve_id, **curve)

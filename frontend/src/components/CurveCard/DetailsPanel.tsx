@@ -7,7 +7,7 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 import { Copy, Check } from 'lucide-react';
 
 interface DetailsPanelProps {
-  detail?: CurveDetail;
+  detail: CurveDetail;
 }
 
 export const DetailsPanel: React.FC<DetailsPanelProps> = ({ detail }) => {

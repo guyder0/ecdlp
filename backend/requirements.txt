@@ -4,6 +4,7 @@ sympy
 
 # API
 fastapi
+socketio
 uvicorn[standard]
 pydantic
 
