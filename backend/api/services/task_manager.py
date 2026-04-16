@@ -71,8 +71,10 @@ class TaskManager:
 
     def _on_complete(self, task_id: str, socket_manager=None, sid: str | None = None):
         """Returns a callback that updates task status on completion."""
+        import asyncio
+        loop = asyncio.get_event_loop()
+
         def callback(future: Future):
-            import asyncio
             task = self._tasks.get(task_id)
             if task is None:
                 return
@@ -86,7 +88,7 @@ class TaskManager:
                 task.error = str(exc)
 
             if socket_manager and sid:
-                asyncio.get_event_loop().create_task(
+                loop.create_task(
                     socket_manager.emit_task_complete(
                         task_id,
                         task.status.value,

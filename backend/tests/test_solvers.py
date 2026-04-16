@@ -1,5 +1,17 @@
 import random
+import time
+
 from ecdlp import solve_ecdlp
+
+class Timer:
+    def __enter__(self):
+        self.start = time.perf_counter()
+        return self
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        self.end = time.perf_counter()
+        self.duration = self.end - self.start
+        print(f"Выполнено за: {self.duration:.6f} сек.")
 
 def test_smart_attack_from_dataset(case_anomalous):
     curve = case_anomalous['curve']
@@ -8,8 +20,9 @@ def test_smart_attack_from_dataset(case_anomalous):
 
     secret_x = random.randint(1, n - 1)
     Q = P * secret_x
-    
-    result = solve_ecdlp(P, Q, curve)
+
+    with Timer():
+        result = solve_ecdlp(P, Q, curve)
     assert result == secret_x
 
 def test_pohlig_hellman_from_dataset(case_smooth):
@@ -20,7 +33,8 @@ def test_pohlig_hellman_from_dataset(case_smooth):
     secret_x = random.randint(1, n - 1)
     Q = P * secret_x
     
-    result = solve_ecdlp(P, Q, curve)
+    with Timer():
+        result = solve_ecdlp(P, Q, curve)
     assert result == secret_x
 
 def test_pollard_rho_from_dataset(case_general):
@@ -31,5 +45,6 @@ def test_pollard_rho_from_dataset(case_general):
     secret_x = random.randint(1, n - 1)
     Q = P * secret_x
     
-    result = solve_ecdlp(P, Q, curve)
+    with Timer():
+        result = solve_ecdlp(P, Q, curve)
     assert result == secret_x

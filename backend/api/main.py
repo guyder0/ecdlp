@@ -8,13 +8,13 @@ from api.services.socket_manager import SocketManager
 from api import dependencies
 from api import socketio_handlers
 
-tm = TaskManager(max_workers=4)
 sm = SocketManager()
+dependencies.set_socket_manager(sm)
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
+    tm = TaskManager(max_workers=4)
     dependencies.set_task_manager(tm)
-    dependencies.set_socket_manager(sm)
     socketio_handlers.register_handlers(sm, tm)
     yield
     tm.shutdown()

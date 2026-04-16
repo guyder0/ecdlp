@@ -11,4 +11,4 @@
 # кривые с простым порядком, совпадающим с порядком поля для Smart Attack
 ./ecgen --fp -c5 -r --anomalous 512 > dataset/anomalous/512bit.json
 ./ecgen --fp -c5 -r --anomalous 256 > dataset/anomalous/256bit.json
-./ecgen --fp -c5 -r --anomalous 128 > dataset/anomalous/128bit.json
+./ecgen --fp -c5 -r --anomalous 128 > dataset/anomalous/128bit.json1
