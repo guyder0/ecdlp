@@ -1,18 +1,26 @@
-\documentclass[11pt]{article}
+\documentclass[12pt]{article}
 \usepackage[margin=1in]{geometry}
-\usepackage[T2A]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage[russian]{babel}
 
 \usepackage[russian]{babel}
+\usepackage{fontspec}
 
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{xcolor}
 \usepackage{unicode-math}
 
+\usepackage[outputdir=build]{minted}
+\usemintedstyle{colorful}
+\setminted{
+    fontsize=\small,
+    breaklines,
+    frame=lines,
+    tabsize=4
+}
+
 \setmainfont{STIX Two Text}
 \setmathfont{STIX Two Math}
+\setmonofont{JetBrains Mono}[Scale=MatchLowercase]
 
 \usepackage[unicode,colorlinks=true,linkcolor=black!65!blue,citecolor=black!65!blue,urlcolor=black!65!blue]{hyperref}
 
@@ -43,9 +51,7 @@
 
 \input{content/section7.tex}
 
-\section{Заключение}
-
-В работе рассмотрены общий метод решения ECDLP, метод, использующий факторизацию порядка подгруппы, и специальная атака на аномальные кривые. Основной вывод состоит в том, что стойкость определяется порядком генератора, кофактором и отсутствием специальных уязвимостей у кривой.
+\input{content/section8.tex}
 
 \clearpage
 \phantomsection
