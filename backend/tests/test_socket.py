@@ -127,7 +127,8 @@ def client(server):
 class TestSocketSolve:
     def test_solve_small_curve_returns_result(self, server, client):
         """Solve a fast curve and verify task_started + task_complete with result."""
-        client.emit("solve", {"curve_id": "general_16bit_0", "x": 42})
+        x = "0xab"
+        client.emit("solve", {"curve_id": "general_16bit_0", "x": x})
 
         started = client.wait_for_event("task_started", timeout=5)
         assert started is not None
@@ -136,10 +137,11 @@ class TestSocketSolve:
         complete = client.wait_for_event("task_complete", timeout=30)
         assert complete is not None
         assert complete["status"] == "completed"
-        assert complete["result"] == 42
+        assert complete["result"] == x
 
     def test_solve_invalid_curve_returns_error(self, server, client):
-        client.emit("solve", {"curve_id": "nonexistent", "x": 123})
+        x = "0xabcd"
+        client.emit("solve", {"curve_id": "nonexistent", "x": x})
 
         complete = client.wait_for_event("task_complete", timeout=5)
         assert complete is not None
@@ -158,7 +160,7 @@ class TestSocketSolve:
 class TestSocketCancel:
     def test_cancel_on_slow_curve(self, server, client):
         """Start solve on general_40bit (slow), cancel it, verify cancelled status."""
-        x = 1_000_000_007
+        x = "0xffffffff"
         client.emit("solve", {"curve_id": "general_40bit_0", "x": x})
 
         started = client.wait_for_event("task_started", timeout=5)

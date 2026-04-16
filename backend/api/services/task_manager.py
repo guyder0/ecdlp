@@ -91,8 +91,8 @@ class TaskManager:
                 loop.create_task(
                     socket_manager.emit_task_complete(
                         task_id,
-                        task.status.value,
-                        result=task.result,
+                        status=task.status.value,
+                        result=hex(task.result),
                         error=task.error,
                     )
                 )

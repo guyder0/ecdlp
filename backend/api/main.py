@@ -1,6 +1,9 @@
 from contextlib import asynccontextmanager
 from fastapi import FastAPI
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
 import socketio
+import os
 
 from api.routes import health, curves, solve, tasks
 from api.services.task_manager import TaskManager
@@ -31,6 +34,14 @@ app.include_router(health.router, prefix="", tags=["health"])
 app.include_router(curves.router, prefix="/api/v1", tags=["curves"])
 app.include_router(solve.router, prefix="/api/v1", tags=["solve"])
 app.include_router(tasks.router, prefix="/api/v1", tags=["tasks"])
+
+# Отдача фронта на продакшене
+if os.path.exists("frontend/dist"):
+    app.mount("/assets", StaticFiles(directory="frontend/dist/assets"), name="assets")
+
+    @app.get("/{full_path:path}")
+    async def serve_frontend(full_path: str):
+        return FileResponse("frontend/dist/index.html")
 
 app = socketio.ASGIApp(
     sm.sio, 

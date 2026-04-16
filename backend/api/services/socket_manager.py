@@ -7,7 +7,7 @@ class SocketManager:
     """Thin wrapper around socketio.AsyncServer with typed emit helpers."""
 
     def __init__(self) -> None:
-        self.sio = socketio.AsyncServer(async_mode="asgi", cors_allowed_origins="*")
+        self.sio = socketio.AsyncServer(async_mode="asgi", logger=True, cors_allowed_origins="*")
 
     # -- event emitters (server → client) --------------------------------
 
