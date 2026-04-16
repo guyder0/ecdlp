@@ -1,0 +1,67 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+
+\usepackage[russian]{babel}
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{unicode-math}
+
+\setmainfont{STIX Two Text}
+\setmathfont{STIX Two Math}
+
+\usepackage[unicode,colorlinks=true,linkcolor=black!65!blue,citecolor=black!65!blue,urlcolor=black!65!blue]{hyperref}
+
+\setlength{\parindent}{1.25cm}
+\setlength{\parskip}{0.5\baselineskip}
+
+
+\begin{document}
+\hypersetup{pageanchor=false}
+\input{titlepage.tex}
+\clearpage
+\hypersetup{pageanchor=true}
+\setcounter{page}{2}
+\tableofcontents
+\clearpage
+
+\input{content/section1.tex}
+
+\input{content/section2.tex}
+
+\input{content/section3.tex}
+
+\input{content/section4.tex}
+
+\input{content/section5.tex}
+
+\input{content/section6.tex}
+
+\input{content/section7.tex}
+
+\section{Заключение}
+
+В работе рассмотрены общий метод решения ECDLP, метод, использующий факторизацию порядка подгруппы, и специальная атака на аномальные кривые. Основной вывод состоит в том, что стойкость определяется порядком генератора, кофактором и отсутствием специальных уязвимостей у кривой.
+
+\clearpage
+\phantomsection
+\addcontentsline{toc}{section}{Список литературы}
+\begin{thebibliography}{99}
+\bibitem{hankerson}
+D.~Hankerson, A.~Menezes, S.~Vanstone.
+\textit{Guide to Elliptic Curve Cryptography}.
+Springer, 2004.
+
+\bibitem{ecgen}
+J.~Jancar.
+\textit{ecgen: Tool for generating elliptic curve domain parameters}.
+GitHub repository.
+\url{https://github.com/J08nY/ecgen}.
+Accessed: 2026-04-15.
+\end{thebibliography}
+
+\end{document}
