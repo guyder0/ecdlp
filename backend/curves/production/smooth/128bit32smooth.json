@@ -1,0 +1,180 @@
+[
+{
+    "field": {
+        "p": "0xf1836f910ec02c0b60bf969be0e17dd9"
+    },
+    "a": "0x901eaa425870d5c84ddf0e6edaaa5cb3",
+    "b": "0x08c3deb7b46fbe2b4e7892e2c36784ac",
+    "order": "0xf1836f910ec02c0c62a487d155c53d11",
+    "subgroups": [
+        {
+            "x": "0x202b66852319ea44493fa081e7cdcb32",
+            "y": "0xb30672a1a9f89ad668496492580dad31",
+            "order": "0xf1836f910ec02c0c62a487d155c53d11",
+            "cofactor": "0x1",
+            "points": [
+                {
+                    "x": "0xa7238558b9c4efda21788a4c2d9598a3",
+                    "y": "0x374866b02628932859615f4966d76b49",
+                    "order": "0xa3"
+                },
+                {
+                    "x": "0xa1527e184304c58d44c79fd8a6ba2ce1",
+                    "y": "0x5f2150b292b847376c3e9d81d20548b7",
+                    "order": "0x167"
+                },
+                {
+                    "x": "0x079ab77a7ae6b068f33c4613b6b01d1b",
+                    "y": "0x1c584456f0e82a36b39541fa3df2fe61",
+                    "order": "0x177b"
+                },
+                {
+                    "x": "0x084f78de782c7cfb7f297e435ac7f9d1",
+                    "y": "0x7b13654c01e566ad0d29bbe9f3fe304e",
+                    "order": "0x8e991"
+                },
+                {
+                    "x": "0x1dbf20393fdb869c2c13d1329627bd09",
+                    "y": "0xadfead556ae17454aafbead265dcd44a",
+                    "order": "0x25a4e3"
+                },
+                {
+                    "x": "0xa128a92789220ce355bedcbdb799e758",
+                    "y": "0x84ac85aa8e438f2e5f45f9a810439906",
+                    "order": "0x183f9b63"
+                },
+                {
+                    "x": "0xe9af413cc70fbab492d98e23c4c633df",
+                    "y": "0xdbb2db53ba918d26dbe5e26cd75cd679",
+                    "order": "0x5ccc42ef"
+                }
+            ]
+        }
+    ]
+},
+{
+    "field": {
+        "p": "0xdf338fa3c1285bf981de95dfd9f0b351"
+    },
+    "a": "0x3fbfdea730f090d70bda1dbcacf8982f",
+    "b": "0x2881e70067d454e04a3aeb8e1a517ff6",
+    "order": "0xdf338fa3c1285bf95e2091fadb645c3a",
+    "subgroups": [
+        {
+            "x": "0xcbab278a7894e524cb026beca8583fd5",
+            "y": "0x9cfc93bc8c5d4a6436f83eb11e9e2df3",
+            "order": "0xdf338fa3c1285bf95e2091fadb645c3a",
+            "cofactor": "0x1",
+            "points": [
+                {
+                    "x": "0xd648ab3729e5b2618b27278e4fe7588c",
+                    "y": "0x00000000000000000000000000000000",
+                    "order": "0x2"
+                },
+                {
+                    "x": "0x628425972b96192bc9b73d5d0a2b22bc",
+                    "y": "0x26e8a316c7428b1e351b89d072bec7e7",
+                    "order": "0x101"
+                },
+                {
+                    "x": "0x4187c9579cf4741d5e9ec6e23637ba79",
+                    "y": "0xd08ab60c48060ab6d779ae6407b6b32a",
+                    "order": "0x167"
+                },
+                {
+                    "x": "0xcdfe1c5a39135f448d9f0c8f67f2c7b4",
+                    "y": "0x346e15e27218e771e1444f3c5f2d7e17",
+                    "order": "0x8c3"
+                },
+                {
+                    "x": "0x627e9f7afb7070d03de0e2e220c92db5",
+                    "y": "0xde31bcdac8261fa09969fbe5ff16b0cb",
+                    "order": "0x14b1"
+                },
+                {
+                    "x": "0x89f42647151e80f6b5a828f4263b0db4",
+                    "y": "0x5c74074c7c4129c03f4cbf30383e3fd0",
+                    "order": "0x6fd7"
+                },
+                {
+                    "x": "0x0f30f9e9605a68db1fa161527e7caac8",
+                    "y": "0x2abee08ec4cdbf25bdceff0a98bbcdc8",
+                    "order": "0x3c9eb"
+                },
+                {
+                    "x": "0x3fa2ecaef82a1c25d1057e62d658dde0",
+                    "y": "0xd52eb4c8aacc131adcff8ea323d41fa1",
+                    "order": "0x5237425"
+                },
+                {
+                    "x": "0xac6b3270534bbf4cf4e646b6a87ca499",
+                    "y": "0x590954ae8c285c69c574feef88ed1b3a",
+                    "order": "0xd293ee9"
+                }
+            ]
+        }
+    ]
+},
+{
+    "field": {
+        "p": "0xa0d66884e0c22c7225d369de07cbf39b"
+    },
+    "a": "0x22a6eec92fc70ffd14628d839bd4b794",
+    "b": "0x69db201d552d18209d934d8de18c13c2",
+    "order": "0xa0d66884e0c22c7184357b7839f4079e",
+    "subgroups": [
+        {
+            "x": "0x06423a7d289557e062be509197fef0b7",
+            "y": "0x34d2b52bb2a9054f2db3547ade122fcc",
+            "order": "0xa0d66884e0c22c7184357b7839f4079e",
+            "cofactor": "0x1",
+            "points": [
+                {
+                    "x": "0x3e71f6dfe4bddeaa17f7f60b5032d958",
+                    "y": "0x00000000000000000000000000000000",
+                    "order": "0x2"
+                },
+                {
+                    "x": "0x836dbf0ade553ed86ed0d686f13421b7",
+                    "y": "0x034f7dcd776f9ede48d883d5eb2449c2",
+                    "order": "0x3"
+                },
+                {
+                    "x": "0x21808f47c847469d093fce34f72b730c",
+                    "y": "0x56b653af7460f452d2142551f3ed7b4f",
+                    "order": "0x35"
+                },
+                {
+                    "x": "0x380e8cb44966e2c4423857a9acf036fc",
+                    "y": "0x5419e33f1af6d69714ebfc03c0e4e4e0",
+                    "order": "0x80f"
+                },
+                {
+                    "x": "0x326b5ff5a78483d12783120af3b4ad86",
+                    "y": "0x8a95b4c4b3f23d2f325ce30659bb7dd0",
+                    "order": "0x94d"
+                },
+                {
+                    "x": "0x59a7deb6f87e8aa4996c749e0c1d5e10",
+                    "y": "0x9b38b63cc4b03b093e139cc044e3e4e0",
+                    "order": "0x2bdee7"
+                },
+                {
+                    "x": "0x8540d0bac40ad530d80d9003b161fbbb",
+                    "y": "0x387583e3be431069a404b2551b2686b2",
+                    "order": "0x3ff44f"
+                },
+                {
+                    "x": "0x2ce94ef65f007ec55c698684a8ed0a1a",
+                    "y": "0x15509864b99975f604f47065e57199ed",
+                    "order": "0x44d1c9"
+                },
+                {
+                    "x": "0x8fc35372795f27a05a063a25458695d1",
+                    "y": "0x8216348783164d4d225fb5cf8c3dccb6",
+                    "order": "0x961a05ab"
+                }
+            ]
+        }
+    ]
+}]

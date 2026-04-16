@@ -1,0 +1,70 @@
+[
+{
+    "field": {
+        "p": "0xb7164989cbd6aab10b4a8b62c05790beac52e9d196c495fee5aea0a19b3bd817"
+    },
+    "a": "0x8bd892154f6ed0163168f26d9d37986b4e52c4c5f9dc12752687b50888ed2b2d",
+    "b": "0x418204505d12d3a5004d55df22e4434949471f04864636d39ab7034477f9909d",
+    "order": "0xb7164989cbd6aab10b4a8b62c05790beac52e9d196c495fee5aea0a19b3bd817",
+    "subgroups": [
+        {
+            "x": "0x96070a9636ff517b0108f30ac53c431ea23afea5d7e4fcb1fbf1587c19570c5a",
+            "y": "0x2756a604db4a1ede937040327815f526d26a3ad628006acf9c828463a7b6289c",
+            "order": "0xb7164989cbd6aab10b4a8b62c05790beac52e9d196c495fee5aea0a19b3bd817",
+            "cofactor": "0x1",
+            "points": [
+                {
+                    "x": "0x96070a9636ff517b0108f30ac53c431ea23afea5d7e4fcb1fbf1587c19570c5a",
+                    "y": "0x2756a604db4a1ede937040327815f526d26a3ad628006acf9c828463a7b6289c",
+                    "order": "0xb7164989cbd6aab10b4a8b62c05790beac52e9d196c495fee5aea0a19b3bd817"
+                }
+            ]
+        }
+    ]
+},
+{
+    "field": {
+        "p": "0xfacab7eefb8646861d0e769c6cdbf8616f6b0e56fb217fbaa401ee4e36f3de51"
+    },
+    "a": "0xd4081365e598e0900e51e7231310c21211c9f2378ae945d0ffa5c4fa507a5d05",
+    "b": "0xed62920e24df07f65e39cf961826d916c685c9da2202a6c1dea5613c0dbc6e36",
+    "order": "0xfacab7eefb8646861d0e769c6cdbf8616f6b0e56fb217fbaa401ee4e36f3de51",
+    "subgroups": [
+        {
+            "x": "0x0c6a322a29e7fdc385d314bb79b35b4abcb44243b91501d3612b9f407a6bd9f6",
+            "y": "0x9aba8a7536361af7ce8764a9cacb89baf8a61997acf8115b9186aa29ebf78801",
+            "order": "0xfacab7eefb8646861d0e769c6cdbf8616f6b0e56fb217fbaa401ee4e36f3de51",
+            "cofactor": "0x1",
+            "points": [
+                {
+                    "x": "0x0c6a322a29e7fdc385d314bb79b35b4abcb44243b91501d3612b9f407a6bd9f6",
+                    "y": "0x9aba8a7536361af7ce8764a9cacb89baf8a61997acf8115b9186aa29ebf78801",
+                    "order": "0xfacab7eefb8646861d0e769c6cdbf8616f6b0e56fb217fbaa401ee4e36f3de51"
+                }
+            ]
+        }
+    ]
+},
+{
+    "field": {
+        "p": "0xf03dafaee56029cf320f49ee820ab025a000510dc5d68cb21ad1f3ab33f5d27f"
+    },
+    "a": "0xedc84ea7b7570cda1e6c91abcfbec72d51019ed69366cc4ba6933f1a72fc7457",
+    "b": "0x5ede16e296ae62d001f9b9de023171ba1985e1f6e9ef4558b0cc2d3fc8bc3b7f",
+    "order": "0xf03dafaee56029cf320f49ee820ab025a000510dc5d68cb21ad1f3ab33f5d27f",
+    "subgroups": [
+        {
+            "x": "0x1befb649c28312fb862b6a26b1dd6787faa3390d0b47321f469a7b38173b54b7",
+            "y": "0x096492309bf57eaef8ef72b837f6e4e656331d9941e07ffe438e38315f322563",
+            "order": "0xf03dafaee56029cf320f49ee820ab025a000510dc5d68cb21ad1f3ab33f5d27f",
+            "cofactor": "0x1",
+            "points": [
+                {
+                    "x": "0x1befb649c28312fb862b6a26b1dd6787faa3390d0b47321f469a7b38173b54b7",
+                    "y": "0x096492309bf57eaef8ef72b837f6e4e656331d9941e07ffe438e38315f322563",
+                    "order": "0xf03dafaee56029cf320f49ee820ab025a000510dc5d68cb21ad1f3ab33f5d27f"
+                }
+            ]
+        }
+    ]
+}]

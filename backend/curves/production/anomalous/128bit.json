@@ -1,0 +1,70 @@
+[
+{
+    "field": {
+        "p": "0xf9b6f7969a3fff2e53df919b17010983"
+    },
+    "a": "0xe65c24ba95be0e84bb8628408fc562f1",
+    "b": "0x4395d561afc2fddc48ef27a73df1d759",
+    "order": "0xf9b6f7969a3fff2e53df919b17010983",
+    "subgroups": [
+        {
+            "x": "0x0c7bf0a17c0a11004027c35820b95454",
+            "y": "0xcd12313b2150512fb4d68bbb9e7ea1ad",
+            "order": "0xf9b6f7969a3fff2e53df919b17010983",
+            "cofactor": "0x1",
+            "points": [
+                {
+                    "x": "0x0c7bf0a17c0a11004027c35820b95454",
+                    "y": "0xcd12313b2150512fb4d68bbb9e7ea1ad",
+                    "order": "0xf9b6f7969a3fff2e53df919b17010983"
+                }
+            ]
+        }
+    ]
+},
+{
+    "field": {
+        "p": "0xdb5334a7379f9c4fba2531a1c5f0263b"
+    },
+    "a": "0xd376f3335e3b75483b5aba694c3d0620",
+    "b": "0xcbb1d51fe3f086c91103c5b1d6ce5222",
+    "order": "0xdb5334a7379f9c4fba2531a1c5f0263b",
+    "subgroups": [
+        {
+            "x": "0x75e46c717ec27fd429beb072a3e37a86",
+            "y": "0x1355dd7fb74085faaae1cdf91f946fe8",
+            "order": "0xdb5334a7379f9c4fba2531a1c5f0263b",
+            "cofactor": "0x1",
+            "points": [
+                {
+                    "x": "0x75e46c717ec27fd429beb072a3e37a86",
+                    "y": "0x1355dd7fb74085faaae1cdf91f946fe8",
+                    "order": "0xdb5334a7379f9c4fba2531a1c5f0263b"
+                }
+            ]
+        }
+    ]
+},
+{
+    "field": {
+        "p": "0xa81e58115fbdc1d515dc0d4f656ea603"
+    },
+    "a": "0x3e04aa1a2c4c4d0ec4f3ff17ac9f5bc8",
+    "b": "0x0d6bc3fcfd27dc31cf8a5864cea62062",
+    "order": "0xa81e58115fbdc1d515dc0d4f656ea603",
+    "subgroups": [
+        {
+            "x": "0x7b852fac6196510010a8b4132bd589da",
+            "y": "0x7ccc4974fffef61c31b347b5390c5792",
+            "order": "0xa81e58115fbdc1d515dc0d4f656ea603",
+            "cofactor": "0x1",
+            "points": [
+                {
+                    "x": "0x7b852fac6196510010a8b4132bd589da",
+                    "y": "0x7ccc4974fffef61c31b347b5390c5792",
+                    "order": "0xa81e58115fbdc1d515dc0d4f656ea603"
+                }
+            ]
+        }
+    ]
+}]

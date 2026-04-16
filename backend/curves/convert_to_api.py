@@ -16,7 +16,7 @@ Options:
 
 import argparse
 import json
-import os
+import re
 import sys
 from pathlib import Path
 
@@ -84,7 +84,7 @@ def parse_args():
 def resolve_paths(args):
     script_dir = Path(__file__).resolve().parent
 
-    dataset_dir = Path(args.dataset_dir) if args.dataset_dir else script_dir / "dataset"
+    dataset_dir = Path(args.dataset_dir) if args.dataset_dir else script_dir / "production"
     if not dataset_dir.is_dir():
         print(f"Error: dataset directory not found: {dataset_dir}", file=sys.stderr)
         sys.exit(1)
@@ -134,15 +134,20 @@ def make_name(category, filename, index, params):
     return f"{category.capitalize()} {bit_label} #{index}"
 
 
-def make_description(category, params):
+def make_description(category, params, filename=None): # Добавили filename в аргументы
     """Generate a short description based on category."""
     bit_size = params["q"].bit_length()
+    
     if category == "anomalous":
-        return f"Anomalous curve ({bit_size}-bit), vulnerable to Smart's attack"
+        return f"Аномальная кривая ({bit_size}-bit), уязвимая к атаке Смарта"
+    
     elif category == "smooth":
-        return f"Smooth-order curve ({bit_size}-bit), vulnerable to Pohlig-Hellman"
+        smooth_match = re.search(r"(\d+)smooth", filename)
+        smooth_val = smooth_match.group(1) if smooth_match else "unknown"
+        return f"Кривая с гладким порядком ({bit_size}-bit, smooth={smooth_val}), уязвимая к атаке Похлига-Хеллмана"
+    
     else:
-        return f"General-purpose curve ({bit_size}-bit)"
+        return f"Обычная кривая с простым порядком генератора ({bit_size}-bit) без особых уязвимостей"
 
 
 def make_key(category, filename, index, naming):
@@ -177,7 +182,7 @@ def generate_registry(curves, naming):
 
         key = make_key(category, filename, index, naming)
         name = make_name(category, filename, index, params)
-        desc = make_description(category, params)
+        desc = make_description(category, params, filename)
 
         entry = (
             f'    "{key}": {{\n'
