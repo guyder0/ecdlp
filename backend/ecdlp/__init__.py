@@ -51,6 +51,8 @@ def solve_ecdlp(
     :raises SolverError: Если решение не найдено.
     """
 
+    if Q._is_identity: return 0
+
     analysis = ECDLPAuditor.analyze(curve)
     method = analysis["recommended_solver"]
     
